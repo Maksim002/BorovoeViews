@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "315695070422",
+    "firebase_url": "https://borovoekz-5f0ed.firebaseio.com",
+    "project_id": "borovoekz-5f0ed",
+    "storage_bucket": "borovoekz-5f0ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315695070422:android:619e723518844a7d941d77",
+        "android_client_info": {
+          "package_name": "com.timelysoft.borovoe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315695070422-hpjakopkhuo8tn12cormo4kliogt3l7v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.timelysoft.borovoe",
+            "certificate_hash": "653aa2e967d45bd0054e29c271dddf149944c202"
+          }
+        },
+        {
+          "client_id": "315695070422-q3haipn9ak89up2s8mln7unane6bhfa4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZA1DOvtWAYY4BPHUmMtveBN4cZb98SnE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315695070422-q3haipn9ak89up2s8mln7unane6bhfa4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:elevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/news_title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/horizontalMargin"
+            android:layout_marginLeft="@dimen/horizontalMargin"
+            android:layout_marginTop="@dimen/topMargin"
+            android:layout_marginEnd="@dimen/horizontalMargin"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/titleTextSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Отдых в боровом на турбазе" />
+
+        <TextView
+            android:id="@+id/news_date_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalMargin"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="@dimen/horizontalMargin"
+            android:textSize="@dimen/dateTextSize"
+            app:layout_constraintStart_toStartOf="@id/news_title_textview"
+            app:layout_constraintTop_toBottomOf="@id/news_title_textview"
+            tools:text="24.06.12" />
+
+        <com.timelysoft.borovoe.custom.ExpandableTextView
+            android:id="@+id/news_content_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontalMargin"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="@dimen/horizontalMargin"
+            android:lineSpacingExtra="6sp"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/contentTextSize"
+            android:translationY="-3sp"
+            app:layout_constraintEnd_toEndOf="@id/news_title_textview"
+            app:layout_constraintStart_toStartOf="@id/news_title_textview"
+            app:layout_constraintTop_toBottomOf="@id/news_date_textview"
+            app:trimLength="4" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/news_content_textview">
+
+            <ImageView
+                android:id="@+id/news_example1_imageview"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="@dimen/horizontalMargin"
+                tools:background="#000" />
+
+            <ImageView
+                android:id="@+id/news_example2_imageview"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="@dimen/horizontalMargin"
+                tools:background="#000" />
+
+            <ImageView
+                android:id="@+id/news_example3_imageview"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="@dimen/horizontalMargin"
+                tools:background="#000" />
+
+            <ImageView
+                android:id="@+id/news_example4_imageview"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="@dimen/horizontalMargin"
+                tools:background="#000" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

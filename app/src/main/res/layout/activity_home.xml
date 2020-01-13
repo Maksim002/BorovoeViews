@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/video_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="136dp"
+            android:drawableLeft="@drawable/ic_borovoe"
+            android:text="@string/titleText"
+            android:textColor="@color/whiteColor"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="184dp"
+            android:background="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/view_vertical"
+            android:layout_width="1dp"
+            android:layout_height="240dp"
+            android:background="#fff"
+            app:layout_constraintBottom_toBottomOf="@id/view_horizontal"
+            app:layout_constraintEnd_toEndOf="@id/view_horizontal"
+            app:layout_constraintStart_toStartOf="@id/view_horizontal"
+            app:layout_constraintTop_toTopOf="@id/view_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="24dp"
+            android:drawableTop="@drawable/ic_lock"
+            android:text="Забронировать"
+            android:textColor="@color/whiteColor"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/view_horizontal"
+            app:layout_constraintEnd_toStartOf="@id/view_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginBottom="24dp"
+            android:drawableTop="@drawable/ic_food"
+            android:text="Заказать"
+            android:textColor="@color/whiteColor"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/view_horizontal"
+            app:layout_constraintStart_toEndOf="@id/view_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="24dp"
+            android:drawableTop="@drawable/ic_buy"
+            android:text="Купить"
+            android:textColor="@color/whiteColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/view_vertical"
+            app:layout_constraintTop_toBottomOf="@id/view_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="28dp"
+            android:drawableTop="@drawable/ic_call"
+            android:text="Позвонить"
+            android:textColor="@color/whiteColor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/view_vertical"
+            app:layout_constraintTop_toBottomOf="@id/view_horizontal" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

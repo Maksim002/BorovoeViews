@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontalMargin">16dp</dimen>
+    <dimen name="topMargin">16dp</dimen>
+    <dimen name="contentTextSize">14sp</dimen>
+    <dimen name="dateTextSize">12sp</dimen>
+    <dimen name="titleTextSize">18sp</dimen>
+    <dimen name="home_imageviews_dp">56dp</dimen>
+    <dimen name="home_title_textsize">16sp</dimen>
+    <dimen name="titleandbutton">4dp</dimen>
+</resources>

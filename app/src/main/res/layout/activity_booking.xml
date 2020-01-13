@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Booking">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/booking_time_textinput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="97dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:elevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Время"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/booking_date_textinput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@id/booking_time_textinput"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Даты"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/booking_adult_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:maxLines="1"
+            android:text="Количество взрослых"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/booking_date_textinput"
+            app:layout_constraintTop_toBottomOf="@id/booking_date_textinput" />
+
+        <Button
+            android:id="@+id/booking_adult_plus_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/ic_plus_button"
+            app:layout_constraintEnd_toEndOf="@id/booking_time_textinput"
+            app:layout_constraintTop_toBottomOf="@id/booking_time_textinput" />
+
+        <TextView
+            android:id="@+id/booking_adult_counter_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="13dp"
+            android:maxLines="1"
+            android:text="0"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/booking_adult_plus_button"
+            app:layout_constraintEnd_toStartOf="@id/booking_adult_plus_button"
+            app:layout_constraintTop_toTopOf="@id/booking_adult_plus_button" />
+
+        <Button
+            android:id="@+id/booking_adult_minus_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="13dp"
+            android:background="@drawable/ic_minus_button"
+            app:layout_constraintEnd_toStartOf="@id/booking_adult_counter_textview"
+            app:layout_constraintTop_toBottomOf="@id/booking_time_textinput" />
+
+        <TextView
+            android:id="@+id/booking_children_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:maxLines="1"
+            android:text="Количество детей"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/booking_adult_quantity" />
+
+        <Button
+            android:id="@+id/booking_children_plus_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_plus_button"
+            app:layout_constraintBottom_toBottomOf="@id/booking_children_quantity"
+            app:layout_constraintEnd_toEndOf="@id/booking_adult_plus_button" />
+
+        <TextView
+            android:id="@+id/booking_children_counter_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="13dp"
+            android:maxLines="1"
+            android:text="0"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/booking_children_plus_button"
+            app:layout_constraintEnd_toStartOf="@id/booking_children_plus_button"
+            app:layout_constraintTop_toTopOf="@id/booking_children_plus_button" />
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="13dp"
+            android:background="@drawable/ic_minus_button"
+            app:layout_constraintBottom_toBottomOf="@id/booking_children_counter_textview"
+            app:layout_constraintEnd_toStartOf="@id/booking_children_counter_textview" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/booking_name_liver"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/horizontalMargin"
+            android:layout_marginTop="27dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/booking_children_quantity">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:hint="ФИО проживающего"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/booking_number_liver"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/horizontalMargin"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/booking_name_liver">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Телефон"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/booking_addnumber_liver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Добавить телефон"
+            android:textColor="@color/whiteGreen"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/booking_number_liver"
+            app:layout_constraintTop_toBottomOf="@id/booking_number_liver" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/booking_name_locker"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/horizontalMargin"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/booking_addnumber_liver">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="ФИО проживающего"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/booking_number_locker"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/horizontalMargin"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/booking_name_locker">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Телефон"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/booking_addnumber_locker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Добавить телефон"
+            android:textColor="@color/whiteGreen"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/booking_number_locker"
+            app:layout_constraintTop_toBottomOf="@id/booking_number_locker" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/booking_email_locker"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/horizontalMargin"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/booking_addnumber_locker">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email"
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/booking_wish"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_marginHorizontal="@dimen/horizontalMargin"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/booking_email_locker">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:hint="Оставьте ваше пожелание..."
+                android:textColor="@color/textColor"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/booking_payment_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Способ оплаты:"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/booking_wish"
+            app:layout_constraintTop_toBottomOf="@id/booking_wish" />
+
+        <RadioButton
+            android:id="@+id/booking_without_prepayment"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="@color/whiteGreen"
+            app:layout_constraintStart_toStartOf="@id/booking_payment_method"
+            app:layout_constraintTop_toBottomOf="@id/booking_payment_method" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Без предоплаты"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/booking_without_prepayment"
+            app:layout_constraintStart_toEndOf="@id/booking_without_prepayment"
+            app:layout_constraintTop_toTopOf="@id/booking_without_prepayment" />
+
+        <RadioButton
+            android:id="@+id/booking_with_prepayment"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="@color/whiteGreen"
+            app:layout_constraintStart_toStartOf="@id/booking_payment_method"
+            app:layout_constraintTop_toBottomOf="@id/booking_without_prepayment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Карта Visa, Master card"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/booking_with_prepayment"
+            app:layout_constraintStart_toEndOf="@id/booking_with_prepayment"
+            app:layout_constraintTop_toTopOf="@id/booking_with_prepayment" />
+
+
+        <Button
+            android:id="@+id/booking_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/horizontalMargin"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/layout_background"
+            android:text="Забронировать"
+            android:textColor="@color/whiteColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/booking_with_prepayment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

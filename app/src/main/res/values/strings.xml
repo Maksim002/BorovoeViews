@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BorovoeViews</string>
+    <string name="stocks">Акции и скидки</string>
+    <string name="news">Новости</string>
+    <string name="content_tools">Синегорье заставляет человека забыть все суеты и окунуться в мир сказочной стихии, наполненный таинственным ароматом народных преданий и легенд. Синегорье заставляет человека забыть все суеты и окунуться в мир сказочной стихии, наполненный таинственным ароматом народных преданий и легенд. Синегорье заставляет человека забыть все суеты и окунуться в мир сказочной стихии.</string>
+    <string name="date_string">20.09.2019</string>
+    <string name="title_string">Отдых в боровом на турбазе</string>
+    <string name="first_image_path">http://cdn.cnn.com/cnnnext/dam/assets/160809154200-japan-mountain-day-nipesotsu.jpg</string>
+    <string name="discount_content">Если вы посетите Discovery Borovoe в период семи дней до своего дня рождения и семи дней после дня рождения, то 10% от общей суммы вашего бронирования получаете в подарок . Средства начисляются на карту именинника, которой вы можете проводить оплату дополнительных услуг в Discovery Borovoe. Cредства на карте обналичиванию не подлежат, но и не сгорают. Ими можно будет воспользоваться в последующие приезды в Discovery Borovoe</string>
+    <string name="discount_title">Скидки на дни рождения</string>
+    <string name="discount_image_path">https://m.media-amazon.com/images/I/71LvuivuYNL._SS500_.jpg</string>
+    <string name="about_discount_string">О акции</string>
+    <string name="testtext_string">Если вы посетите Discovery Borovoe в период семи дней до своего дня рождения и семи дней после дня рождения, то 10% от общей суммы вашего бронирования получаете в подарок . Средства начисляются на карту именинника, которой вы можете проводить оплату дополнительных услуг в Discovery Borovoe. Cредства на карте обналичиванию не подлежат, но и не сгорают. Ими можно будет воспользоваться в последующие приезды в Discovery Borovoe</string>
+    <string name="ad_content_string">Проведи день рождения в Discovery Borovoe и получи 10% от суммы бронирования в подарок!</string>
+    <string name="intertainment">intertainment</string>
+    <string name="titleText">Discovery \nBorovoe</string>
+</resources>

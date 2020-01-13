@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_fragment_rounded_backround">
+
+    <TextView
+        android:id="@+id/house_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="36dp"
+        android:drawableTop="@drawable/ic_house"
+        android:drawablePadding="24dp"
+        android:gravity="center"
+        android:text="Извините, все номера заняты"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/choose_other_date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/circle_green_backround"
+        android:gravity="center"
+        android:text="Выбрать другую дату"
+        android:textColor="#FFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/house_textview"
+        app:layout_constraintStart_toStartOf="@id/house_textview"
+        app:layout_constraintTop_toBottomOf="@id/house_textview" />
+
+
+    <Button
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="26dp"
+        android:background="@null"
+        android:text="Закрыть"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/choose_other_date_button"
+        app:layout_constraintStart_toStartOf="@id/choose_other_date_button"
+        app:layout_constraintTop_toBottomOf="@id/choose_other_date_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

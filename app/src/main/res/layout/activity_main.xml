@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/news_button"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:onClick="newsOnCicked"
+            android:text="@string/news" />
+
+        <Button
+            android:id="@+id/discount_button"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:onClick="discountOnCicked"
+            android:text="@string/stocks" />
+
+        <Button
+            android:id="@+id/intertainment_button"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:onClick="intertainmentOnClicked"
+            android:text="@string/intertainment" />
+
+        <Button
+            android:id="@+id/main_menu_button"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:onClick="mainMenuOnClicked"
+            android:text="HOME" />
+
+
+        <Button
+            android:id="@+id/rooms_button"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:onClick="roomsOnClicked"
+            android:text="Rooms" />
+
+        <Button
+            android:id="@+id/booking_button"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:onClick="bookingOnClicked"
+            android:text="Booking" />
+
+        <Button
+            android:id="@+id/food_button"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:onClick="foodOnClicked"
+            android:text="Food" />
+
+        <Button
+            android:id="@+id/alert_button"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:onClick="alertOnClicked"
+            android:text="Alert dialog fragment" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

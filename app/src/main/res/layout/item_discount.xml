@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/discount_detail_imageview"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/ic_launcher_background"
+            tools:foreground="@drawable/ic_launcher_foreground" />
+
+
+        <TextView
+            android:id="@+id/discount_detail_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="13dp"
+            android:lineHeight="19sp"
+            android:maxLines="1"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/discount_detail_imageview"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Оздоровительная процедура" />
+
+        <TextView
+            android:id="@+id/discount_detail_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2sp"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="@id/discount_detail_title"
+            app:layout_constraintStart_toStartOf="@id/discount_detail_title"
+            app:layout_constraintTop_toBottomOf="@id/discount_detail_title"
+            tools:text="Приезжайте к нам с понедельника по пятницу до 12:00 утра и получите одну озfewfewfwefew" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
